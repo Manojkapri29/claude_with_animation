@@ -15,8 +15,8 @@ NAMES = {1: 'thumb1-main-video-16x9', 2: 'thumb2-reel1-12-saal-ka-badshah-16x9',
 ART = {
  1: 'young Timurid prince Babur, 12 years old, jeweled turban, looking at camera, burning Panipat battlefield and war elephants behind',
  2: '12-year-old Central Asian prince in 1490s Timurid royal attire, ornate jeweled turban, determined eyes looking at camera, ghostly figures of Timur and Genghis Khan in the smoky sky behind',
- 3: 'Mughal emperor Babur in armour on horseback, raised sword, cannons firing behind a wall of wooden carts, huge Afghan army charging, dust and smoke, Panipat 1526',
- 4: 'panicked armoured Indian war elephants stampeding through their own soldiers, cannon smoke and fire, 16th century battlefield, chaos',
+ 3: 'Babur, bearded Timurid warlord in Indo-Persian chainmail and pointed steel helmet, on horseback with raised curved sword, bronze cannons firing behind a line of chained wooden carts, Indian Afghan army charging, dust and smoke',
+ 4: 'panicked armoured Indian war elephants with howdahs stampeding through their own soldiers, cannon smoke and fire, 16th century battlefield, chaos',
  5: 'thoughtful Babur in Timurid armour holding an old map, Panipat battlefield at dusk behind, mysterious mood',
  6: 'three Mughal emperors standing together in royal robes in front of the Taj Mahal at sunset, regal, majestic',
 }

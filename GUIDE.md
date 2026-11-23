@@ -180,7 +180,8 @@ python cwa/thumbs_9x16.py          # Shorts ke liye 9:16
 python tools/thumb_art.py --wide   # 16:9 ke liye landscape art
 python cwa/thumbs_16x9.py          # lambi video ke liye 16:9
 ```
-Free GPU quota roz ka hota hai. Zyada chahiye to free HF account ka token: `export HF_TOKEN=hf_...`
+**Mac (M1/M2/M3/M4, 16 GB RAM, ~20 GB free disk) hai?** `tools/install_mflux_mac.command` double-click karo: mflux + Z-Image Turbo install ho jayega, phir `thumb_art.py` apne aap local chalega — **unlimited, offline, free**.
+Nahi to Hugging Face ka free GPU quota roz ka hota hai. Zyada chahiye to free HF account ka token: `export HF_TOKEN=hf_...`
 Pasand nahi aaya? Prompt badlo ya sirf wahi number dobara: `python tools/thumb_art.py 3`
 
 **Option B — apni image:** Gemini/koi bhi image `out/thumbs/art1.png` naam se rakho (chhoti ho to `python cwa/upscale.py in.png art1.png`), phir upar wali do commands.
