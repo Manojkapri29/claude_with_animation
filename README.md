@@ -29,6 +29,16 @@ cd claude_with_animation
 . .venv/bin/activate
 ```
 
+## 📖 Shuru se end tak guide
+
+**[GUIDE.md](GUIDE.md)** mein har step (narration → beats → preview → render → reels → quiz → thumbnails → upload) commands aur checks ke saath hai.
+Ya ek command se guided pipeline chalao:
+
+```bash
+./make_video.sh my_video
+```
+Script har step par rukti hai aur batati hai aage kya karna hai.
+
 ## Claude se video banwao (sabse aasaan)
 
 Folder ko **Claude Code** (terminal ya VS Code extension) mein kholo aur bolo:
