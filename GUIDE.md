@@ -177,6 +177,7 @@ python cwa/quiz.py 0       # quiz video (1 = doosra quiz)
 ```bash
 python tools/thumb_art.py          # free FLUX.1 Krea (Hugging Face) se art -> out/thumbs/art1.png ...
 python cwa/thumbs_9x16.py          # Shorts ke liye 9:16
+python tools/thumb_art.py --wide   # 16:9 ke liye landscape art
 python cwa/thumbs_16x9.py          # lambi video ke liye 16:9
 ```
 Free GPU quota roz ka hota hai. Zyada chahiye to free HF account ka token: `export HF_TOKEN=hf_...`

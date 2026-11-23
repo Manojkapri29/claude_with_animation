@@ -11,6 +11,10 @@ MAXW, TOP, BOT = 1060, 40, 960
 def measure(kind, txt, s):
     f = F(HEAD if kind == 't' else BODY, s); b = f.getbbox(txt); return f, b[2] - b[0], b[3] - b[1], b
 def build(k):
+    wp = os.path.join(OUT, 'thumbs', f'artw{k}.png')
+    if os.path.exists(wp):   # landscape art: full-bleed
+        C = Image.open(wp).convert('RGB').resize((1920, 1080), Image.LANCZOS)
+        return finish(k, C)
     art = Image.open(os.path.join(OUT, 'thumbs', f'art{k}.png')).convert('RGB')
     C = Image.new('RGB', (1920, 1080))
     bg = art.resize((1920, round(art.height * 1920 / art.width)), Image.LANCZOS)
@@ -21,6 +25,8 @@ def build(k):
     m = Image.new('L', a.size, 255); d = ImageDraw.Draw(m)
     for i in range(260): d.line([(i, 0), (i, 1080)], fill=int(255 * i / 260))
     C.paste(a, (ax, 0), m)
+    return finish(k, C)
+def finish(k, C):
     # left darkening for text legibility
     g = Image.new('L', (1920, 1080), 0); d = ImageDraw.Draw(g)
     for x in range(1200): d.line([(x, 0), (x, 1080)], fill=int(200 * max(0, 1 - x / 1200)))
@@ -64,7 +70,9 @@ def build(k):
     d.text((82 - bb[0], 1018 - (bb[3] + bb[1]) // 2), 'कथा और रहस्य', font=fb, fill='#ffffff')
     out = os.path.join(OUT, 'thumbnails-16x9', f'{NAMES[k]}.jpg'); os.makedirs(os.path.dirname(out), exist_ok=True)
     C.save(out, quality=90); return out
-outs = [build(k) for k in sorted(SPEC)]
+keys = [int(a) for a in sys.argv[1:]] or sorted(SPEC)
+outs = [build(k) for k in keys]
+if len(outs) < 6: print('\n'.join(outs)); raise SystemExit
 s = Image.new('RGB', (3 * 640, 2 * 360))
 for i, o in enumerate(outs): s.paste(Image.open(o).resize((640, 360)), ((i % 3) * 640, (i // 3) * 360))
 s.save(os.path.join(OUT, 'thumbnails-16x9', 'contact_sheet.jpg')); print('\n'.join(f'{o} {os.path.getsize(o)//1024}KB' for o in outs))

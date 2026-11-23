@@ -59,7 +59,7 @@ if [ -f "$P/voice_ref.wav" ] && python -c "import chatterbox" 2>/dev/null; then
 else
   echo "Quiz skip: '$P/voice_ref.wav' aur 'pip install chatterbox-tts' chahiye (GUIDE.md Step 10)."
 fi
-python tools/thumb_art.py || true
+python tools/thumb_art.py || true; python tools/thumb_art.py --wide || true
 if ls "$P"/out/thumbs/art*.png >/dev/null 2>&1; then python cwa/thumbs_9x16.py; python cwa/thumbs_16x9.py; else echo "Thumbnails skip (GUIDE.md Step 11)"; fi
 
 echo; echo "✅ Ho gaya! Sab files: $P/out/"
