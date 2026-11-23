@@ -171,17 +171,20 @@ python cwa/quiz.py 0       # quiz video (1 = doosra quiz)
 
 ---
 
-## Step 11 — Thumbnails (15 min)
+## Step 11 — Thumbnails (10 min, bilkul free)
 
-1. Koi bhi tasveer (apni banayi ya AI image) ke hisse `projects/my_video/out/thumbs/art1.png` ... naam se rakho.
-2. Chhoti tasveer ho to upscale: `python cwa/upscale.py in.png art1.png`
-3. `thumbs_config.py` mein Hindi text likho, fir:
+**Option A — AI art apne aap (sabse aasaan):** `thumbs_config.py` mein `ART` mein har thumbnail ka English prompt likho (log + scene, **koi text nahi**), aur `SPEC` mein Hindi text.
 ```bash
-python cwa/thumbs_16x9.py
+python tools/thumb_art.py          # free FLUX.1 Krea (Hugging Face) se art -> out/thumbs/art1.png ...
+python cwa/thumbs_9x16.py          # Shorts ke liye 9:16
+python cwa/thumbs_16x9.py          # lambi video ke liye 16:9
 ```
-Lambi video ke liye **16:9**, Shorts ke liye **9:16**.
+Free GPU quota roz ka hota hai. Zyada chahiye to free HF account ka token: `export HF_TOKEN=hf_...`
+Pasand nahi aaya? Prompt badlo ya sirf wahi number dobara: `python tools/thumb_art.py 3`
 
----
+**Option B — apni image:** Gemini/koi bhi image `out/thumbs/art1.png` naam se rakho (chhoti ho to `python cwa/upscale.py in.png art1.png`), phir upar wali do commands.
+
+Tip: AI se image mein text mat likhwao, Hindi galat aati hai. Text scripts khud lagati hain.
 
 ## Step 12 — Upload (10 min)
 

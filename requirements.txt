@@ -6,3 +6,4 @@ faster-whisper
 # chatterbox-tts
 # optional: thumbnail upscaling
 # torch
+gradio_client>=1.0
