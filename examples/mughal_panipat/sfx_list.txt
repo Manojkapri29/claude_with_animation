@@ -1,0 +1,30 @@
+whoosh|3|soft cinematic whoosh transition, smooth airy swish, subtle
+swish|1|very short light air swish for a camera cut, subtle and quiet
+cannon|4|single heavy medieval cannon firing with deep boom and long echo across open battlefield
+musket|4|volley of old matchlock muskets firing together, crackling gunpowder shots, battlefield
+gallop|6|group of horses galloping fast on dry dirt ground, cavalry charge
+march|8|large army marching in step, many footsteps, armor and chainmail rattling, outdoors
+elephant|5|angry war elephants trumpeting loudly in panic, heavy stomping
+battle|10|medieval battle ambience, swords clashing, men shouting war cries, distant chaos
+warcry|4|big crowd of soldiers shouting a war cry together
+fire|10|large fire burning, crackling flames, burning city ambience
+court|10|royal palace court ambience, soft murmur of nobles, gentle echo in large hall
+wind|10|cold howling wind in snowy high mountains, blizzard
+rain|10|heavy rain with distant rolling thunder at night
+thunder|5|close thunder crack followed by deep rumble
+unsheathe|2|metal sword being unsheathed, sharp ring
+clash|3|two swords clashing hard, metallic clang
+page|3|old thick book page turning, paper rustle
+chess|2|wooden chess piece placed firmly on a wooden board
+chest|4|old wooden chest lid creaking open, empty hollow sound
+candle|10|quiet night inside a tent, crickets outside, soft candle flame
+paper|3|old parchment map being unrolled, paper rustle
+drums|6|royal Indian nagara war drums, majestic and powerful beat
+river|10|wide river flowing, water rushing over stones, outdoors
+wagons|6|heavy wooden wagons with creaking wheels being pulled, chains and leather ropes tightened
+arrows|4|volley of arrows flying through the air and whooshing past
+thud|2|heavy body falling onto dry ground, dull thud with armor
+cheer|5|army crowd cheering victory, triumphant shouting
+tick|1|single clean clock tick
+correct|2|bright pleasant correct answer chime, game show
+heartbeat|6|slow deep tense heartbeat, cinematic suspense

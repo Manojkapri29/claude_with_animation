@@ -1,0 +1,8 @@
+skia-python>=87.6
+numpy
+pillow>=10
+faster-whisper
+# optional: voice cloning for quiz narration (heavy, ~3 GB)
+# chatterbox-tts
+# optional: thumbnail upscaling
+# torch

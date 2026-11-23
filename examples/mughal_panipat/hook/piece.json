@@ -1,0 +1,9 @@
+{
+  "name": "mughal-hook",
+  "title": "Mughal hook",
+  "format": { "width": 1920, "height": 1080, "fps": 24, "bpm": 120, "duration": 11.25, "frames": 270 },
+  "formats": ["16:9"],
+  "storyFormat": "F2 morph chain",
+  "style": "cut-paper",
+  "review": { "safe": { "top": 60, "bottom": 110, "right": 60 }, "refs": {} }
+}

@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+models/
+**/out/
+**/src/*.wav
+**/src/*.mp4
+**/sfx/
+**/quiz_audio/
+**/voice_ref.wav
+projects/
+*.mp4
+*.mp3
+.env
