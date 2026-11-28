@@ -29,6 +29,10 @@ cd claude_with_animation
 . .venv/bin/activate
 ```
 
+## 🎞️ 10 viral reel styles (Antigravity / Claude)
+
+Globe arcs, turntable, hologram, flat cartoon, 3D map route, billboard, ink doodle, glow world, 3D teardown, iceberg dive. Skill: `.agents/skills/reel-animation-styles/` · copy-paste prompts: **[ANTIGRAVITY_PROMPTS.md](ANTIGRAVITY_PROMPTS.md)** · Antigravity workflow: `/daily-reel`.
+
 ## 📖 Shuru se end tak guide
 
 **[GUIDE.md](GUIDE.md)** mein har step (narration → beats → preview → render → reels → quiz → thumbnails → upload) commands aur checks ke saath hai.
